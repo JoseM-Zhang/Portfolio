@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 body {
     background-color: rgb(20, 20, 20);
     margin: 0px;
@@ -49,7 +51,7 @@ body {
 .menu-item {
     color: white;
     font-size: clamp(3rem, 8vw, 8rem);
-    font-family: "Ibarra Real Nova", serif;
+    font-family:'Poiret One', cursive;
     display: block;
     text-decoration: none;
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
