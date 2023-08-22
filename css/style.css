@@ -108,12 +108,12 @@ img {
 a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
 }
 figure {
     display: grid;
     border-radius: 1rem;
     overflow: hidden;
-    cursor: pointer;
 }
 figure > * {
     grid-area: 1/1;
