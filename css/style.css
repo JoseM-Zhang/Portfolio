@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/*transitions*/
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+}
 
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
+/*index*/
 body {
     background-color: rgb(20, 20, 20);
     margin: 0px;
@@ -10,10 +20,11 @@ body {
     width: 100vw;
     display: flex;
     align-items: center;
+    gap: clamp(10vw, 20vw, 50vw);
 }
 
 #menu-items {
-    margin-left: clamp(4rem, 20vw, 48rem);
+    margin-left: clamp(4rem, 10vw, 10rem);
     position: relative;
     z-index: 1;
 }
@@ -47,13 +58,21 @@ body {
     background-position: center 60%;
 }
 
-
-.menu-item {
+#menu-text, .menu-item {
     color: white;
-    font-size: clamp(3rem, 8vw, 8rem);
     font-family:'Poiret One', cursive;
     display: block;
     text-decoration: none;
+}
+
+#menu-text {
+    font-size: clamp(1rem, 5vw, 2rem);
+    position: relative;
+    z-index: 2;
+}
+
+.menu-item {
+    font-size: clamp(3rem, 5vw, 5rem);
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     transition: opacity 400ms ease;
 }
